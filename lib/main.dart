@@ -14,11 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.grey[300],
         appBar: AppBar(
-          title: const Text('Container'),
+          backgroundColor: Colors.black26,
+          title: Center(child: const Text('Container')),
         ),
         body: Center(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: const [Circle(), Rectangle()],
         )),
       ),
